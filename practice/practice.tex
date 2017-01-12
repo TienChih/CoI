@@ -25,12 +25,13 @@ $$\graph[xmin=-2,xmax=2,ymin=-0.5,ymax=1, panel]{N=e^{-x^2/2}/(2\pi)^{(0.5)}, P=
 
 \begin{sageCell}
 from scipy.stats import norm
-
 normdist = norm()
 
 mean=120 # Put the mean of the distribution here
 std=30  # Put the standard deviation of the distribution here.
 P=0.4  # P is the value such that everything to the left of X is P
+
+
 
 X=normdist.ppf(P)*std+mean
 
